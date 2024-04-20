@@ -1,0 +1,78 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    *{
+        margin: 0px;
+        font-family: "Roboto Condensed";
+    }
+
+    main{
+        height: 100%;
+        width: 250px;
+        margin: auto;
+    }
+
+    header{
+        background-color: white;
+        text-align: center;
+    }
+
+    header h1{
+        padding-top: 20px;
+        padding-left: 0px;
+        font-size: 2.8em;
+    }
+    header p{
+        color: red;
+        padding-left: 0px;
+        padding-bottom: 30px;
+        margin-bottom: 20px;
+        font-size: 2.1em;
+    }
+
+    h3{
+        padding-bottom: 20px;
+        padding-top: 11px;
+        margin-left: 15px;
+        font-size: 1.7em;
+        font-weight: 500;
+    }
+
+    h3#ultimo{
+        color: black;
+        padding-left: 0px;
+    }
+    p{
+        color: rgb(0, 0, 0);
+        padding-left: 40px;
+        padding-bottom: 10px;
+        padding-left: 84px;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+
+    div.Caixadeimagens{
+        display: grid;
+        margin: auto;
+        width: 600px;
+        padding-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 30px; 
+    }
+
+    img{
+        mix-blend-mode: multiply;
+    }
+    div.Imagens{
+        text-align: center;
+    }
+
+    div.Imagens img{
+        margin-right: 20px;
+        margin: 5px;
+        background-color: rgb(220, 220, 220);
+    }
+    div#ultimasimagens{
+        margin-bottom: 60px;
+    }

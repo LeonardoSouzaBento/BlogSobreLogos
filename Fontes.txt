@@ -1,0 +1,8 @@
+titulo: fonte alta e de bordas arredondadas
+Entradas minimas: semelhante a danomo
+Brick Tetris
+BeijingWigoWhat
+
+
+Formas geometricas: semelhante a crasus
+Totalmente preenchidas: sem os espaços de ddentro das letras
