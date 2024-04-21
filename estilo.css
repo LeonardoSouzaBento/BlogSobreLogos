@@ -31,6 +31,12 @@
     font-style: normal;
   }  
 
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
+.babylonica-regular {
+    font-family: "Babylonica", cursive;
+    font-weight: 400;
+    font-style: normal;
+    }
 
 *{
     margin: 0px;
@@ -61,6 +67,7 @@ header h1{
     padding: 15px 0px;
     padding-bottom: 0px;
     margin: auto;
+    line-height: 34px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 1.75em;
@@ -75,10 +82,10 @@ main>div.Caixadeimagens>h3#um{
     margin-bottom: 10px;
     font-weight: normal;
     text-shadow:
-        -0.4px -0.4px 0 black,  
-        0.4px -0.4px 0 black,
-        -0.4px 0.4px 0 black,
-        0.4px 0.4px 0 black;
+        -0.2px -0.2px 0 black,  
+        0.2px -0.2px 0 black,
+        -0.2px 0.2px 0 black,
+        0.2px 0.2px 0 black;
     border: 1px solid black;
     box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.219);
     border-radius: 10px;
@@ -87,6 +94,14 @@ main>div.Caixadeimagens>h3#um{
 main>div.Caixadeimagens>h3#f{
     font-weight: 500;
 
+}
+main>div.Caixadeimagens>h3#ass{
+    font-family: "Babylonica", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+main>div.Caixadeimagens>h3#ttp{
+    margin-bottom: 20px;
 }
 h3{
     margin: auto;
@@ -108,7 +123,9 @@ p{
     font-size: 1.1em;
     text-align: center;
     text-align: justify;
+    margin: auto;
     padding: 0px 30px 20px;
+    width: 270px;
 }
 
 div.Caixadeimagens{
