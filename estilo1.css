@@ -133,13 +133,14 @@ p{
     width: 270px;
 }
 main > div.Caixadeimgs{
+    background-color: rgb(97, 97, 97);
     margin: auto;
 }
 main > div.Caixadeimgs > div.Imgs{
     width: 260px;
     display: grid;
     margin: auto;
-    grid-template-columns:repeat(3, 120px);
+    grid-template-columns:repeat(2, 120px);
     padding-bottom: 55px;
 }
 main > div.Caixadeimgs > div.Imgs> img{
