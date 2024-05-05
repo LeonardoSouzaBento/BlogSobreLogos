@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*FONTES*/
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 .sacramento-regular {
     font-family: "Sacramento", cursive;
@@ -44,79 +45,91 @@
 }
 body{
     max-width: 1920px;
+    -ms-overflow-style: none;
+    overflow-y: scroll; 
+}
+body::-webkit-scrollbar {
+    display: none;
 }
 main{
     height: 100%;
     max-width: 1920px;
 }
-
 header{
     width: 100%;
     background-color: rgb(26, 26, 26);
     background-image: linear-gradient(to bottom, black, rgb(32, 32, 32));
     text-align: center;
-    padding: 33px 0px 36px;
+    padding: 40px 0px 50px;
 }
 header h1{
-    width:700px;
+    max-width:700px;
     padding: 0px;
     margin: auto;
     line-height: 40px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
-    font-size: 1.75em;
+    font-size: 2em;
     font-style: normal;
     color: white;
     text-transform: uppercase;
 }
 main > div.Caixadeimgs{
-    background-color: rgb(212, 212, 212);
-    display: grid;
-    grid-template-columns: repeat(3, 446px);
-    padding: 10px 0px;
-    margin-top: 20px;
-    max-width:1340px;
-    border-radius: 7px;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding:30px 0px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    max-width: 1340px;
+    border-radius: 12px;
+    /*border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;*/
 }
 main > div.Caixadeimgs > div.Imgs{
-    background-color: rgb(185, 185, 185);
-    border-radius: 15px;
-    width: 400px;
+    background-color: rgba(185, 185, 185, 0.177);
+    border-radius: 10px;
+    max-width: 380px;
     display: grid;
-    gap: 18px;
+    gap: 14px;
+    margin-right: 14px;
     grid-template-columns:repeat(3, 120px);
+    grid-template-rows: 3;
     padding: 20px;
+    
 }
 main > div.Caixadeimgs > div.Imgs> img{
     background-color: rgb(220, 220, 220);
-    width:120px;
-    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.219);
+    max-width:110px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.286);
     border-radius: 10px;
 }
-/*H3*/
-    main> h3{
-        margin: auto;
-        width: 440px;
-        text-align: center;
-        padding: 8px 0px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 1.35em;
-        font-weight: 600;
-    }
-
-    main>div.Caixadeimgs>h3#fg{
-        font-weight: 500;
-        margin-top: 15px;
-    }
-    
+.Imgs#c {
+   margin: auto;
+}
+main > div.Caixadeimgs > div.Imgs> h2{
+    max-width: 380px;
+    grid-area: 1 / 1 / 2 / 4;
+}
+main> h3{
+    margin: auto;
+    width: 440px;
+    text-align: center;
+    padding: 8px 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.35em;
+    font-weight: 600;
+}
+/**/
     main>h3#ulc{
         margin: auto;
-        margin-top: 10px;
+        margin-top: 30px;
+        margin-bottom: 14px;
+        padding: 0px;
         font-family: "Sacramento", cursive;
-        font-size: 2em;
-        padding: 8px 0px;
-        margin-bottom: 10px;
+        font-size: 2.4em;
         font-weight: normal;
         text-shadow:
             -0.1px -0.1px 0 black,  
@@ -124,16 +137,32 @@ main > div.Caixadeimgs > div.Imgs> img{
             -0.1px 0.1px 0 black,
             0.1px 0.1px 0 black;
     }
-
-    main>div.Caixadeimgs>h3#lcpr{
-        font-size: 1.2em;
+    main>div.Caixadeimgs>div.Imgs>h2.h2ulc{
+        font-family: "Sacramento", cursive;
+        color: rgb(0, 0, 0);
+        font-weight: lighter;
+        font-size:2.2em;
+        background-color: white;
+        padding: 10px 0px;
+        max-height: 50px;
+        border-radius: 7px;
+        text-shadow:
+        -0.05px -0.05px 0 black,  
+        0.05px -0.05px 0 black,
+        -0.05px 0.05px 0 black,
+        0.05px 0.05px 0 black;
     }
 
-    main>div.Caixadeimgs>h3#tp{
+    main>h3#fg{
+        font-weight: 500;
+        margin-top: 15px;
+    }
+    
+    main>h3#tp{
         margin-bottom: 20px;
     }
 
-    main> div.Caixadeimgs> h3#ass{
+    main>h3#ass{
         font-size: 16px;
         font-family: "Babylonica", cursive;
         font-weight: 400;
@@ -148,7 +177,6 @@ main > div.Caixadeimgs > div.Imgs> img{
 h2{
     text-align: center;
 }
-
 p{
     color: rgb(0, 0, 0);
     padding-bottom: 10px;
@@ -161,4 +189,20 @@ p{
 }
 div#ultimasimagens{
     margin-bottom: 60px;
+}
+main> div.Artis{
+    display: block;
+    background-color: rgb(45, 45, 45);
+    height: 200px;
+    width: 1360px;
+}
+main>div.Artis>div.Imgs{
+    display: block;
+    max-width: 1360px;
+    margin: auto;
+}
+main>div.Artis>div.Imgs>img{
+    max-width:110px;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.286);
+    border-radius: 10px;
 }
