@@ -2,8 +2,11 @@ titulo: Teko, Fjalla One
 Entradas minimas: semelhante a danomo
 Brick Tetris
 BeijingWigoWhat
+
 Linhas com pontas afiadas: Lugrasimo, merienda, italiana
 Linhas com pontas redondas: Dosis
+
 Nick Mookovic: fuggles
 Formas geometricas: semelhante a crasus
+
 Totalmente preenchidas: sem os espaços de ddentro das letras

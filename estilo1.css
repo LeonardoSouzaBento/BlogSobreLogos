@@ -61,23 +61,19 @@ body{
     background-size: cover;
 }
 main{
-    width: 100%;
-    max-width: 1024px;
+    width: 375px;
     display: block;
     margin: auto;
     text-align: center;
 }
 header{
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-width: 1024px;
+    width: 375px;
     background-color: rgb(227, 227, 227);
     text-align: center;
     padding: 40px 0px 50px;
 }
 header h1{
-    width: 70vw;
+    width: 70%;
     padding: 0px;
     margin: auto;
     font-family: "Barlow Condensed", sans-serif;
@@ -112,7 +108,7 @@ div.Imgs{
     box-shadow: none;
     border: none;
 }
-img{
+div.Imgs img{
     background-color: rgb(220, 220, 220);
     width:90px;
     border-radius: 5px;
@@ -120,8 +116,7 @@ img{
 }
 
 main h2{
-    width: 100%;
-    max-width: 70%;
+    width: 70%;
     padding: 8px 0px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -136,7 +131,7 @@ main h3{
     padding: 30px 0px;
     text-align: center;
     height: 50px;
-    width: 50vh;
+    width: 50%;
 }
 p{
     width: 80%;
@@ -194,7 +189,14 @@ div#caixa_ulc{
         width: 80%;
         height: 200px;
     }
-
+    div#artista{
+        width: 100%;
+        height: 250px;
+        margin-bottom: 20px;
+        box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.335);
+        border: 1px solid rgb(255, 255, 255)ack;
+        background-color: rgb(235, 235, 235);
+    }
     h4#autor{
         font-family: "Sacramento", cursive;
         font-weight: lighter;
