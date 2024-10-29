@@ -49,36 +49,38 @@
 
 
 *{
-    margin: 0px;
     font-family: "Roboto Condensed";
 }
 body{
-    width: 100%;
-    -ms-overflow-style: none;
-    overflow-y: scroll;
+    width: 100vw;
     background-image: linear-gradient( to right, rgb(212, 212, 212), rgb(255, 255, 255));
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0px;
 }
 main{
-    width: 375px;
+    min-width: 375px;
+    max-width: 1200px;
     display: block;
-    margin: auto;
     text-align: center;
+    margin: auto;
+    margin-top: -5px;
 }
 header{
-    width: 375px;
+    min-width: 375px;
+    max-width: 1200px;
     background-color: rgb(227, 227, 227);
     text-align: center;
     padding: 40px 0px 50px;
+    margin: auto;
 }
 header h1{
-    width: 70%;
+    width: 80%;
     padding: 0px;
     margin: auto;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
-    font-size: 2em;
+    font-size: 2.1em;
     font-style: normal;
     text-transform: uppercase;
 }
@@ -104,6 +106,7 @@ div.Imgs{
     padding: 20px 0px;
     margin: auto;
     width: 100%;
+    max-width: 80vw;
     justify-content: center;
     box-shadow: none;
     border: none;
@@ -111,6 +114,7 @@ div.Imgs{
 div.Imgs img{
     background-color: rgb(220, 220, 220);
     width:90px;
+    height: auto;
     border-radius: 5px;
     border: 1.5px solid rgb(165, 165, 165);
 }
