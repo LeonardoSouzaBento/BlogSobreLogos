@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*transform: translateX(-50%) para mover para a esquerda em 50% de sua largura*/
 
 body::-webkit-scrollbar {
     display: none; /* Oculta a barra de rolagem */
@@ -113,6 +114,10 @@ img{
     border-radius: 5px;
     box-shadow: 2px 2px 5px 0px rgb(165, 165, 165);
 }
+img:hover{
+    transform: scale(1.05);
+    transition: transform 0.25s ease;
+}
 div.Imgs{
     display: flex;
     flex-flow:row wrap;
@@ -124,7 +129,7 @@ div.Imgs{
     box-shadow: none;
     border: 2px solid white;
     background-image: linear-gradient(to top,rgb(210, 210, 210), rgb(255, 255, 255));
-    
+    overflow-y: hidden;
 }
 main h2{
     width: 70%;
@@ -154,9 +159,37 @@ p{
 div#caixa_ulc{
     padding: 20px 0px;
     border-radius: 7px;
+    overflow-y: hidden;
 }
-    div#caixa_ulc img{
+    button#to_up, button#to_down{
+        transition:background-color 0.2s ease;
+        background-color: rgba(0, 0, 0, 0.584);
+        width: 315px;
+        border: none;
+        position: absolute;
+        padding: 12px 0px;
+        color:rgb(255, 255, 255);
+        z-index: 1
+    }
+    button#to_up{
+        top: 331px; 
+        border-radius: 10px 10px 0px 0px;
+    }
+    button#to_down{
+        bottom: -75px; 
+        border-radius: 0px 0px 10px 10px;
+    }
+    button#to_up:hover, button#to_down:hover{
+        background-color: rgba(0, 0, 0, 0.784);
+    }
+
+    main>div#caixa_ulc>div.Imgs{
+        height: 360px;
+    }
+    main>div#caixa_ulc>div.Imgs> img{
         filter: grayscale(100%);
+        transform: translateY(39px);
+        transition: 1s ease;
     }
     img#chef{width: 90%;}
     img#cang{
@@ -218,21 +251,22 @@ div#caixa_ulc{
     h4#mencao{
         height: 20px;
         display: block;
-        margin: 0px auto;
+        margin: auto;
+        margin-bottom: 15px;
         font-family: "Sacramento", cursive;
         font-weight: lighter;
         font-size:2em;
         text-align: left;
-        padding: 0px;
+        padding: 0px 0px 20px;
         text-shadow:
         -0.03px -0.03px 0 black,  
         0.03px -0.03px 0 black,
         -0.03px 0.03px 0 black,
         0.03px 0.03px 0 black;
     }
-    div#artista img{
-        height: 110px;
-        width: 110px;
+    
+    div#pert{
+        justify-content: center;
     }
 
 /*formas geometricas*/

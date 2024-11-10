@@ -1,0 +1,49 @@
+Função para rolagem com dedo
+let translateYValue = -285;
+let startY = 0;
+let endY = 0;
+
+document.getElementById("container").addEventListener("touchstart", (event) => {
+  startY = event.touches[0].clientY; // Pega a posição inicial do toque
+});
+
+document.getElementById("container").addEventListener("touchend", (event) => {
+  endY = event.changedTouches[0].clientY; // Pega a posição final do toque
+  handleScroll();
+});
+
+function handleScroll() {
+  if (startY > endY + 30) {
+    // Rolagem para cima
+    scrollUp();
+  } else if (startY < endY - 30) {
+    // Rolagem para baixo
+    scrollDown();
+  }
+}
+
+function scrollUp() {
+  if (translateYValue === -285) {
+    translateYValue = 38;
+  } else if (translateYValue === -609) {
+    translateYValue = -285;
+  }
+  updateTranslateY();
+}
+
+function scrollDown() {
+  if (translateYValue === 38) {
+    translateYValue = -285;
+  } else if (translateYValue === -285) {
+    translateYValue = -609;
+  }
+  updateTranslateY();
+}
+
+function updateTranslateY() {
+  const images = document.querySelectorAll("#first img");
+
+  images.forEach((img) => {
+    img.style.transform = `translateY(${translateYValue}px)`;
+  });
+}
