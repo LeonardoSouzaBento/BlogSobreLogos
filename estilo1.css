@@ -62,6 +62,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0px;
+    overflow-x: hidden;
 }
 main{
     width: 350px;
