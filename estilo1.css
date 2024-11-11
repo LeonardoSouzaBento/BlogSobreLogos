@@ -176,7 +176,7 @@ div#caixa_ulc{
         border-radius: 10px 10px 0px 0px;
     }
     button#to_down{
-        bottom: -75px; 
+        top: 683px; 
         border-radius: 0px 0px 10px 10px;
     }
     button#to_up:hover, button#to_down:hover{
@@ -188,7 +188,7 @@ div#caixa_ulc{
     }
     main>div#caixa_ulc>div.Imgs> img{
         filter: grayscale(100%);
-        transform: translateY(39px);
+        transform: translateY(-285px);
         transition: 1s ease;
     }
     img#chef{width: 90%;}
