@@ -1,0 +1,58 @@
+Arrow Functions
+
+Sintaxe do forEach:
+array.forEach(function(elemento, indice, array) {
+  // Código a ser executado para cada elemento
+});
+
+Usando função de seta (de Arrow)
+array.forEach((elemento, indice, array) => {
+  // Código a ser executado para cada elemento
+});
+
+Exemplo:
+    const numeros = [1, 2, 3, 4, 5];
+
+    numeros.forEach(function(numero) {
+    console.log(numero);
+    });
+
+    // Com arrow function
+    numeros.forEach(numero => console.log(numero));
+
+    Saida: 1, 2, 3, 4, 5
+
+Outro exemplo:
+    const frutas = ['maçã', 'banana', 'laranja'];
+
+    frutas.forEach((fruta, indice, array) => {
+    console.log(`${fruta} está na posição ${indice} do array [${array.join(', ')}]`);
+    });
+
+    Saida:
+    maçã está na posição 0 do array [maçã, banana, laranja]
+    banana está na posição 1 do array [maçã, banana, laranja]
+    laranja está na posição 2 do array [maçã, banana, laranja]
+
+Exemplo com objetos:
+        const usuarios = [
+            { nome: 'Alice', idade: 25 },
+            { nome: 'Bob', idade: 30 },
+            { nome: 'Charlie', idade: 35 }
+        ];
+
+        usuarios.forEach(usuario => {
+            usuario.idade += 1;
+        });
+
+        console.log(usuarios);
+
+        Saida:
+        [
+            { nome: 'Alice', idade: 26 },
+            { nome: 'Bob', idade: 31 },
+            { nome: 'Charlie', idade: 36 }
+        ]
+
+
+

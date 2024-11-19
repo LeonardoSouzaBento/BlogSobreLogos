@@ -162,24 +162,24 @@ div#caixa_ulc{
     border-radius: 7px;
     overflow-y: hidden;
 }
+    div#first{
+        position: relative;
+    }
     button#to_up, button#to_down{
         transition:background-color 0.2s ease;
         background-color: rgba(0, 0, 0, 0.584);
-        width: 315px;
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
         border: none;
         position: absolute;
         padding: 12px 0px;
         color:rgb(255, 255, 255);
         z-index: 1
     }
-    button#to_up{
-        top: 331px; 
-        border-radius: 10px 10px 0px 0px;
-    }
-    button#to_down{
-        top: 683px; 
-        border-radius: 0px 0px 10px 10px;
-    }
+    button#to_up{top: 0%;}
+
+    button#to_down{bottom: 0%; transform: rotate(180deg);}
+
     button#to_up:hover, button#to_down:hover{
         background-color: rgba(0, 0, 0, 0.784);
     }
@@ -246,14 +246,14 @@ div#caixa_ulc{
     }
 
     div#mencao{
+        margin-top: 20px;
         width: 90%;
-        height: 200px;
+        height: 350px;
     }
     h4#mencao{
         height: 20px;
         display: block;
-        margin: auto;
-        margin-bottom: 15px;
+        margin: auto auto 15px 30px;
         font-family: "Sacramento", cursive;
         font-weight: lighter;
         font-size:2em;
