@@ -1,10 +1,6 @@
 @charset "UTF-8";
 /*transform: translateX(-50%) para mover para a esquerda em 50% de sua largura*/
 
-body::-webkit-scrollbar {
-    display: none; /* Oculta a barra de rolagem */
-}
-
 /* TITULO DO HEADER */
     @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap');
     .barlow-condensed-regular {
@@ -50,108 +46,120 @@ body::-webkit-scrollbar {
       font-family: "Babylonica", cursive;
       font-weight: 400;
       font-style: normal;
-      }
+  }
 
 
 *{
     font-family: "Roboto Condensed";
+    padding: 0px;
+    margin: 0px;
 }
 body{
     width: 100vw;
-    background-image: linear-gradient( to bottom, rgb(212, 212, 212), rgb(255, 255, 255));
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
-    overflow-x: hidden;
 }
 main{
-    width: 350px;
-    max-width: 1200px;
-    display: block;
-    text-align: center;
+    width: 90%;
     margin: auto;
-    margin-top: -15px;
 }
 header{
-    width: 375px;
-    max-width: 100vh;
-    background-color: rgb(227, 227, 227);
+    width: 90%;
+    height: 130px;
+    background-color: rgb(237, 237, 237);
     text-align: center;
-    padding: 40px 0px 50px;
+    padding: 25px 0px;
     margin: auto;
-    height: 65px;
-    background-image: linear-gradient(to top, rgb(212, 212, 212), white);
+    margin-bottom: 5px;
+    margin-top: 10px;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 0px 0px 4px rgb(95, 95, 95);
+    box-sizing: border-box;
 }
 header h1{
-    width: 80%;
+    width: 90%;
     padding: 0px;
-    margin: auto;
     margin-top: -15px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 600;
     font-size: 2.1em;
+    line-height: 1.5em;
     font-style: normal;
     text-transform: uppercase;
+    text-align: left;
+    margin-left: 20px;
 }
-div{
-    background-color: rgb(235, 235, 235);
-    display: flex;
-    flex-flow:row wrap;
-    margin: auto;
-    margin-top: 0px;
-    margin-bottom: 80px;
-    gap: 5px;
-    /*border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;*/
-    box-shadow: 4px 9px 12px rgba(0, 0, 0, 0.335);
-    border: 1px solid rgb(255, 255, 255);
-    padding: 20px 0px;
-    border-radius: 10px;
-}
-img{
-    background-color: rgb(220, 220, 220);
-    width:135px;
-    height: fit-content;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 0px rgb(165, 165, 165);
-}
-img:hover{
-    transform: scale(1.05);
-    transition: transform 0.25s ease;
-}
-div.Imgs{
-    display: flex;
-    flex-flow:row wrap;
-    gap: 14px;
-    padding: 20px 0px;
-    margin: auto;
+/*Classe 1 para imagens*/
+.Imgs{
     width: 90%;
-    justify-content: center;
-    box-shadow: none;
-    border: 2px solid white;
-    background-image: linear-gradient(to top,rgb(210, 210, 210), rgb(255, 255, 255));
-    overflow-y: hidden;
+    flex: 1 0 220px;
+    height: 60vw;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: none;
+    margin: auto;
 }
-main h2{
-    width: 70%;
-    padding: 8px 0px;
-    margin-top: 10px;
+    .maior{
+        width: 76%;
+        height: 100%;
+        border: none;
+    }
+    .maior>img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: filter 0.5s ease-out;
+        border-radius: 6px;
+        box-shadow: 1px 1px 3px rgb(131, 131, 131);
+    }
+
+    .menor{
+        display: flex;
+        flex-flow: column;
+        width: 20%;
+        height: 100%;
+        justify-content: space-between;
+        border: none;
+        gap: 6%;
+    }
+    .menor>img{
+        width: 100%;
+        height: 28%;
+        flex: 1 0 auto;
+        object-fit: cover;
+        filter: brightness(0.9) opacity(1) saturate(0);
+        transition: filter 0.6s ease;
+        border-radius: 6px;
+        box-shadow: 1px 1px 3px rgb(115, 115, 115);
+    }
+/*Classe txt*/
+.txt{
     margin-bottom: 10px;
+}
+.fundo{
+    background-color: rgb(237, 237, 237);
+    box-shadow: 0px 0px 4px rgb(95, 95, 95);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    padding: 20px 0px;
+}
+
+
+h2{
+    padding: 10px 0px 20px 20px;
+    margin-top: 10px;
     margin: auto;
     font-size: 1.35em;
     font-weight: 600;
-    background-color: rgb(235, 235, 235);
-    box-shadow: 7px 5px 7px rgb(186, 186, 186);
 }
 main h3{
-    background-color: white;
     padding: 30px 0px;
     text-align: center;
     height: 50px;
     width: 50%;
 }
 p{
-    width: 80%;
+    width: 90%;
     font-weight: 500;
     margin: auto;
     text-align: left;
@@ -159,50 +167,12 @@ p{
 /*Uma linha continua*/
 div#caixa_ulc{
     padding: 20px 0px;
-    border-radius: 7px;
-    overflow-y: hidden;
+    border-radius: 0px 0px 6px 6px;
+    margin-bottom: 30px;
 }
-    div#first{
-        position: relative;
-    }
-    button#to_up, button#to_down{
-        transition:background-color 0.2s ease;
-        background-color: rgba(0, 0, 0, 0.584);
-        border-radius: 10px 10px 0px 0px;
-        width: 100%;
-        border: none;
-        position: absolute;
-        padding: 12px 0px;
-        color:rgb(255, 255, 255);
-        z-index: 1
-    }
-    button#to_up{top: 0%;}
-
-    button#to_down{bottom: 0%; transform: rotate(180deg);}
-
-    button#to_up:hover, button#to_down:hover{
-        background-color: rgba(0, 0, 0, 0.784);
-    }
-
-    main>div#caixa_ulc>div.Imgs{
-        height: 360px;
-    }
-    main>div#caixa_ulc>div.Imgs> img{
-        filter: grayscale(100%);
-        transform: translateY(-285px);
-        transition: 1s ease;
-    }
-    img#chef{width: 90%;}
-    img#cang{
-        height: 135px;
-        object-fit: cover;
-    }
-    img#moveis{
-        width: 280px;
-    }
-
+    
     h2#ulc{
-        width: 90%;
+        width: 90%; 
         padding: 5px 0px;
         margin-bottom: 9px ;
         font-family: "Sacramento", cursive;
@@ -213,22 +183,18 @@ div#caixa_ulc{
         0.04px -0.04px 0 black,
         -0.04px 0.04px 0 black,
         0.04px 0.04px 0 black;
-        border-radius: 5px;
-        /*border: 1px solid rgb(255, 255, 255);*/
-        background-color: rgb(242, 242, 242);
     }
     p#p_ulc{
-        padding-bottom: 15px;
         font-family: "Sacramento", cursive;
         font-weight: lighter;
-        font-size:1.6em;
-        text-align: center;
+        font-size:1.7em;
         line-height: 39px;
         text-shadow:
         -0.02px -0.02px 0 black,  
         0.02px -0.02px 0 black,
         -0.02px 0.02px 0 black,
         0.02px 0.02px 0 black;
+        padding-bottom: 20px;
     }
     div#caixa_ulc h3{
         font-family: "Sacramento", cursive;
@@ -244,32 +210,50 @@ div#caixa_ulc{
         0.04px 0.04px 0 black;
         border: 1px solid rgb(215, 215, 215);
     }
-
+div#first{
+    margin-bottom: 25px;
+}
     div#mencao{
         margin-top: 20px;
+    }
+
+    div#h4_mencao{
+        display: flex;
+        flex-flow: row nowrap;
+        position: relative;
         width: 90%;
-        height: 350px;
+        margin: auto;
+    }
+    div#h4_mencao>span{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 18px;
+        background-color: rgb(231, 231, 231);
+        border-radius: 7px;
     }
     h4#mencao{
-        height: 20px;
-        display: block;
-        margin: auto auto 15px 30px;
+        width: 100%;
+        margin: auto;
         font-family: "Sacramento", cursive;
         font-weight: lighter;
         font-size:2em;
-        text-align: left;
-        padding: 0px 0px 20px;
+        background-color: rgb(231, 231, 231);
+        margin-bottom: 15px;
+        padding: 7px 0px;
+        padding-left: 15px;
+        border-radius: 6px 6px 0px 0px;
+        box-shadow: 0px 2px 4px rgb(111, 111, 111) ;
         text-shadow:
-        -0.03px -0.03px 0 black,  
-        0.03px -0.03px 0 black,
-        -0.03px 0.03px 0 black,
-        0.03px 0.03px 0 black;
+        -0.01px -0.01px 0 rgb(21, 21, 21),  
+        0.01px -0.01px 0 rgb(21, 21, 21),
+        -0.01px 0.01px 0 rgb(21, 21, 21),
+        0.01px 0.01px 0 rgb(21, 21, 21);
+        color: rgb(21, 21, 21);
     }
-    
     div#pert{
-        justify-content: center;
+        display: none;
     }
-
 /*formas geometricas*/
     h3#fg{
         font-weight: 500;
@@ -334,9 +318,9 @@ div#caixa_ulc{
 
 div#artisp{
     display: flex;
-    flex-flow:row wrap ;
-    height: 500px;
-    width: 900px;
+    flex-flow:column nowrap;
+    align-items: center;
+    width: 100%;
     border: 1px dashed black;
     border-radius: 20px;
     margin: auto;
@@ -352,28 +336,16 @@ div#artisp{
         height: 20px;
         padding: 22px 0px;
         border-radius: 20px 20px 0px 0px;
+        box-sizing: border-box;
     }
 
-div#artisp>div#gal, div#artisp>div#nick{
-    display: flex;
-    width: 420px;
-    height: 400px;
-    flex-flow:column wrap;
+div#nick{
     border-radius: 5px;
-    align-items: center;
     background-color: rgb(32, 32, 32);
     color: white;
 }
-    div#artisp>div#gal>div, div#artisp>div#nick>div{
-        display: flex;
-        width: 400px;
-        height: 220px;
-        flex-flow:row wrap;
-        margin: auto;
-        gap: 15px;
-    } 
-    div#artisp>div#gal>h4{
-        width: 420px;
+
+    div#gal>h4{
         height: 40px;
         padding: 0px;
         margin: 0px;
@@ -382,15 +354,13 @@ div#artisp>div#gal, div#artisp>div#nick{
         font-style: normal;
         font-size: 3em;
     }
-    div#artisp>div#nick>h4{
-        width: 420px;
+    div#nick>h4{
         height: 40px;
         padding: 0px;
         margin: 0px;
     }  
     
-    div#artisp>div#gal>p, div#artisp>div#nick>p{
-        width: 350px;
+    div#nick>p{
         height: 40px;
         padding: 0px;
         margin: 0px;

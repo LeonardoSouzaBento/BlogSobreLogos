@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tendencias atuais de desing de logos</title>
     <!--Estilos-->
-    <link rel="stylesheet" href="estilo1.css" media="screen and (min-width: 375px)">
+    <link rel="stylesheet" href="estilo1.css" media="screen and (max-width: 572px)">
     
     <!-- Fontes-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap">
@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
     <!--SimbolosGoogle-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <script src="scripts.js"></script>
 </head>
@@ -28,131 +29,153 @@
         
     <main>
         
-        <div id="caixa_ulc">
-            <h2 id="ulc">Uma linha contínua</h2>
-            <p id="p_ulc">Uma opção de desenho pertinente para logos que usam fontes cursivas.</p>
+        <div id="caixa_ulc" class="fundo">
 
-            <div class="Imgs" id="first" onmousewheel="rolagemScroll()">
-                
-                <button id="to_up" class="scroll-btn material-icons" onclick="scrollUp()" >keyboard_control_key</button>
-                <img src="https://i.pinimg.com/564x/da/b4/5e/dab45e0941718df21f42e956cf82166d.jpg" alt="Logo de canguru" id="cang" class="gr1">
-                <img src="LinhaContinua/blackbull.png" alt="Logo de touro" class="gr1">
-                <img src="LinhaContinua/urso.png" alt=" Logo de urso" class="gr1">
-                <img src="LinhaContinua/raposa.png" alt="Logo de raposa" class="gr1">
-                
+                <h2 id="ulc">Uma linha contínua</h2>
+                <p id="p_ulc">Uma opção de desenho pertinente para logos que usam fontes cursivas.</p>
 
-                <img src="https://i.pinimg.com/564x/a5/23/f0/a523f02a6a82837f27bb68c730a6ff87.jpg" alt="Desenho de chefe de cozinha" id="chef">
-                <img src="LinhaContinua/esquilo.png" alt="Logo de esquilo">    
-                <img src="LinhaContinua/gato.png" alt="Logo de gato">
-               
-                <img src="https://img.freepik.com/premium-vector/furniture-logo-collection_23-2148634719.jpg?w=740" alt="" id="moveis">
-                <button id="to_down" class="scroll-btn material-icons" onclick="scrollDown()">keyboard_control_key</button>
+            <div id="first" class="Imgs">
+                <div class="maior">
+                    <img src="LinhaContinua/gato.png" alt="Logo de gato">
+                </div>
+                <div class="menor">
+                    <img src="LinhaContinua/blackbull.png" alt="Logo de touro" class="gr1">
+                    <img src="https://i.pinimg.com/564x/a5/23/f0/a523f02a6a82837f27bb68c730a6ff87.jpg" alt="Desenho de chefe de cozinha" id="chef">
+                    <img src="https://img.freepik.com/premium-vector/furniture-logo-collection_23-2148634719.jpg?w=740" alt="" id="moveis">
+                </div>
             </div>
 
+
             <div id="mencao">
-                <h4 id="mencao">Menção pertinente</h4>
-                <div id="pert">
-                    <img src="https://i.pinimg.com/564x/8e/51/3e/8e513e4d01844ac532fed08f3703e6ec.jpg" alt="">
-                    <img src="https://i.pinimg.com/564x/63/58/49/63584944ae821b99ded120b33be072b1.jpg" alt="">
-                    <img src="https://i.pinimg.com/564x/35/7b/51/357b51ea77d0d89f22ba79aac62b6dc3.jpg" alt="">
-                    <img src="https://i.pinimg.com/564x/80/d1/f0/80d1f0143147f5e2f481cc4e04ad754e.jpg" alt="">
+                <div id="h4_mencao">
+                    <h4 id="mencao">Menção pertinente</h4>
+                    <span class="material-symbols-outlined botao",>
+                        collapse_all
+                    </span>
+                    <span class="material-symbols-outlined botao" >
+                        expand_all
+                    </span>
+                </div>
+                <div id="pert" class="Imgs">
+                    <div class="maior">
+                        <img src="https://i.pinimg.com/564x/63/58/49/63584944ae821b99ded120b33be072b1.jpg" alt="">
+                    </div>
+                    <div class="menor">
+                        <img src="https://i.pinimg.com/564x/8e/51/3e/8e513e4d01844ac532fed08f3703e6ec.jpg" alt="">
+                        <img src="https://i.pinimg.com/564x/35/7b/51/357b51ea77d0d89f22ba79aac62b6dc3.jpg" alt="">
+                        <img src="https://i.pinimg.com/564x/80/d1/f0/80d1f0143147f5e2f481cc4e04ad754e.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div id="Fg">
+        <div id="Fg" class="fundo">
             <h2 id="fg">Formas Geométricas</h2>
             <div class="Imgs">
-                <img src="FormasGeometricas/coelho.png" alt=" Logo de coelho">
-                <img src="FormasGeometricas/urso.png" alt="Logo de urso">
-                <img src="FormasGeometricas/papagaio.png" alt="Logo de papagaio">
-                <img src="FormasGeometricas/camaleao.png" alt="Logo de camaleão">
-                <img src="FormasGeometricas/tucano.png" alt="Logo de tucano">
-                <img src="FormasGeometricas/tucano2.png" alt="Logo de tucano">
+                <div class="maior">
+                    <img src="FormasGeometricas/tucano.png" alt="Logo de tucano">
+                </div>
+                <div class="menor">
+                    <img src="FormasGeometricas/coelho.png" alt=" Logo de coelho">
+                    <img src="FormasGeometricas/urso.png" alt="Logo de urso">
+                    <img src="FormasGeometricas/tucano2.png" alt="Logo de tucano">
+                </div>
             </div>
         </div>
 
-        <div id="caixalcpr">
+        <div id="caixalcpr" class="fundo">
             <h2 id="lcpr">Linhas com pontas retas</h2>
             <div class="Imgs">
-                <img src="PontaQuadrada/elefante.png" alt="Logo de elefante">
-                <img src="PontaQuadrada/leao.png" alt="Logo de leão">
-                <img src="PontaQuadrada/porco.png" alt="Logo de porco">
-                <img src="" alt="Logo de">              
-                <img src="" alt="Logo de">
-                <img src="PontaQuadrada/chifrudo.png" alt="Logo de animal chifrudo">
+                <div class="maior">
+                    <img src="PontaQuadrada/leao.png" alt="Logo de leão">
+                </div>
+                <div class="menor">
+                    <img src="PontaQuadrada/elefante.png" alt="Logo de elefante">
+                    <img src="PontaQuadrada/porco.png" alt="Logo de porco">
+                    <img src="PontaQuadrada/chifrudo.png" alt="Logo de animal chifrudo">
+                </div>
             </div>
         </div>
 
-        <div id="caixa_lcpa">
+        <div id="caixa_lcpa" class="fundo">
             <h2 id="lcpa">Linhas com pontas afiadas</h2>
             <div class="Imgs">
-                <img src="PontasAfiadas/tigre1.png" alt="Logo de tigre">
-                <img src="PontasAfiadas/touro.png" alt="Logo de touro">
-                <img src="PontasAfiadas/tigre2.png" alt="Logo de tigre">
-                <img src="PontasAfiadas/macaco.png" alt="Logo de macaco"> 
-                <img src="PontasAfiadas/cara2.png" alt="Logo de rosto">
-                <img src="PontasAfiadas/cara1.png" alt="Logo de rosto">  
+                <div class="maior">
+                    <img src="PontasAfiadas/cara1.png" alt="Logo de rosto">
+                </div>
+                <div class="menor">
+                    <img src="PontasAfiadas/tigre1.png" alt="Logo de tigre">
+                    <img src="PontasAfiadas/touro.png" alt="Logo de touro">
+                    <img src="PontasAfiadas/macaco.png" alt="Logo de macaco">
+                </div>
             </div>
         </div>
 
-        <div id="Tt">
+        <div id="Tt" class="fundo">
             <h2 id="tp">Totalmente preenchidas</h2>
             <p>Os contornos podem ser mais realistas, seguir a orientação de arcos de círculos, ou, em vez disso, serem feitos de linhas retas.
             </p>
             <div class="Imgs">
-                <img src="TotalmentePreenchidas/aguia.png" alt="Logo de águia">
-                <img src="TotalmentePreenchidas/gato2.png" alt="Logo de gato">            
-                <img src="TotalmentePreenchidas/galo.png" alt="Logo de galo">
-                <img src="TotalmentePreenchidas/raposa.png" alt="Logo de raposa">
-                <img src="TotalmentePreenchidas/urso.png" alt="Logo de urso">
-                <img src="TotalmentePreenchidas/gato1.png" alt="Logo de gato"> 
+                <div class="maior">
+                    <img src="TotalmentePreenchidas/aguia.png" alt="Logo de águia">
+                </div>
+                <div class="menor">
+                    <img src="TotalmentePreenchidas/gato2.png" alt="Logo de gato">
+                    <img src="TotalmentePreenchidas/galo.png" alt="Logo de galo">
+                    <img src="TotalmentePreenchidas/urso.png" alt="Logo de urso">
+                </div>
             </div>
         </div>
         
-        <div>
+        <div class="fundo">
             <h2>Entradas mínimas</h2>
             <div class="Imgs"> 
-                <img src="EntradasMinimas/Young-Horse-Logo_edited.jpg" alt="Logo de cavalo">
-                <img src="EntradasMinimas/Lion Icon_edited.jpg" alt="Logo de leão">
-                <img src="EntradasMinimas/Panther.png" alt="Logo de pantera">
-                <img src="EntradasMinimas/White Lion_edited.jpg" alt="Logo de leão">  
-                <img src="EntradasMinimas/passaro.jpg" alt="Logo de passaro">
-                <img src="EntradasMinimas/Geometric Lamb Logo_edited.jpg" alt="Logo de ovelha"> 
+                <div class="maior">
+                    <img src="EntradasMinimas/passaro.jpg" alt="Logo de passaro">
+                </div>
+                <div class="menor">
+                    <img src="EntradasMinimas/Young-Horse-Logo_edited.jpg" alt="Logo de cavalo">
+                    <img src="EntradasMinimas/White Lion_edited.jpg" alt="Logo de leão">
+                    <img src="EntradasMinimas/Geometric Lamb Logo_edited.jpg" alt="Logo de ovelha">
+                </div> 
             </div>
         </div>
 
-        <div>
+        <div class="fundo">
             <h2>Silhuetas com partes "recortadas", "vazadas"</h2>
             <p>Com esses “recortes” pode-se representar uma parte do animal ou algum outro elemento da imagem como se fosse uma parte inteiramente branca.</p>
             <div class="Imgs">
-            <img src="PartesVazadas/ursovazado.png" alt="Logo de urso">
-            <img src="PartesVazadas/castor.png" alt="Logo de castor">
-            <img src="PartesVazadas/elefante.png" alt="Logo de elefante">
-            <img src="PartesVazadas/cisnei.png" alt="Logo de cisnei">
-            <img src="PartesVazadas/dragao.png" alt="Logo de dragão">
-            <img src="PartesVazadas/lhama.png" alt="Logo de lhama">        
+                <div class="maior">
+                    <img src="PartesVazadas/lhama.png" alt="Logo de lhama">
+                </div>
+                <div class="menor">
+                    <img src="PartesVazadas/ursovazado.png" alt="Logo de urso">
+                    <img src="PartesVazadas/castor.png" alt="Logo de castor">
+                    <img src="PartesVazadas/elefante.png" alt="Logo de elefante">
+                </div>
             </div>
         </div>
-
-        <div class="Caixadeimgs" id="ultimasimagens">
+        
+        <div class="Caixadeimgs fundo" id="ultimasimagens">
             <h2>Luz numa parte, sombras em outra.</h2>
             <div class="Imgs">
-                <img src="MetadeLuz/pantera.png" alt="Logo de">
-                <img src="MetadeLuz/boi2.png" alt="Logo de"> 
-                <img src="MetadeLuz/boi.png" alt="Logo de">
-                <img src="MetadeLuz/rinoceronte.png" alt="Logo de">
-                <img src="MetadeLuz/touro.png" alt="Logo de">
-                <img src="MetadeLuz/74642a44c4008dc0ddd917d0855f4944.png" alt="Logo de">
+                <div class="maior">
+                    <img src="MetadeLuz/boi2.png" alt="Logo de">
+                </div>
+                <div class="menor">
+                    <img src="MetadeLuz/pantera.png" alt="Logo de">
+                    <img src="MetadeLuz/boi.png" alt="Logo de">
+                    <img src="MetadeLuz/touro.png" alt="Logo de">
+                </div>
             </div>
         </div>
 
-        <div id="cdt">
+        <div id="cdt" class="fundo">
             <h3>Combinação de tendencias</h3>
             <p>Uma combinação de tendencias é sempre interessante</p>
         </div>
 
-        <div id="ccn">
+        <div id="ccn" class="fundo">
             <h3>Combinação com nomes: "logomarcas"</h3>
             <p>É mais interessante juntar desenho e nome</p>
         </div>
@@ -164,12 +187,14 @@
             <h4>Gal Yuri</h4>
             <p>O designer Gal Yuri usa linhas com pontas afiadas para compor as sombras</p>
             <div>
-                <img src="GalYuri/porco.png" alt="Ilustração de Gal Yuri">
-                <img src="GalYuri/pantera.png" alt="Ilustração de Gal Yuri">
-                <img src="GalYuri/estatua.png" alt="Ilustração de Gal Yuri">
-                <img src="GalYuri/bufalo.png" alt="Ilustração de Gal Yuri">
-                <img src="GalYuri/jorge.png" alt="Ilustração de Gal Yuri">
-                <img src="GalYuri/gato.png" alt="Ilustração de Gal Yuri">
+                <div class="maior">
+                    <img src="GalYuri/porco.png" alt="Ilustração de Gal Yuri">
+                </div>
+                <div class="menor">
+                    <img src="GalYuri/estatua.png" alt="Ilustração de Gal Yuri">
+                    <img src="GalYuri/bufalo.png" alt="Ilustração de Gal Yuri">
+                    <img src="GalYuri/jorge.png" alt="Ilustração de Gal Yuri">
+                </div>
             </div>
         </div>
 
@@ -177,12 +202,14 @@
             <h4>Nick Molokovich</h4>
             <p>Nick Molokovich usa linhas coloridas junto a partes brancas em fundos escuros.</p>
             <div>
-                <img src="MasterLevsha/esfinge.png" alt="Ilustração de MasterLevsha">
-                <img src="MasterLevsha/aries.png" alt="Ilustração de MasterLevsha">
-                <img src="MasterLevsha/sargitario.png" alt="Ilustração de MasterLevsha">
-                <img src="MasterLevsha/academia.png" alt="Ilustração de MasterLevsha">
-                <img src="MasterLevsha/gryphon.png" alt="Ilustração de MasterLevsha">
-                <img src="MasterLevsha/pegasus.png" alt="Ilustração de MasterLevsha">
+                <div class="maior">
+                    <img src="MasterLevsha/pegasus.png" alt="Ilustração de MasterLevsha">
+                </div>
+                <div class="menor">
+                    <img src="MasterLevsha/esfinge.png" alt="Ilustração de MasterLevsha">
+                    <img src="MasterLevsha/aries.png" alt="Ilustração de MasterLevsha">
+                    <img src="MasterLevsha/academia.png" alt="Ilustração de MasterLevsha">
+                </div>
             </div>
         </div>
     </div>
