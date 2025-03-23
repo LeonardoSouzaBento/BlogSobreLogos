@@ -38,18 +38,13 @@
         font-style: normal;
     }
 
-/* GAL YURI */
-@import url('https://fonts.googleapis.com/css2?family=Babylonica&display=swap');
-  .babylonica-regular {
-      font-family: "Babylonica", cursive;
-      font-weight: 400;
-      font-style: normal;
-  }
-
 *{
     font-family: "Roboto Condensed";
     padding: 0px;
     margin: 0px;
+}
+body{
+    background-color: rgb(243, 243, 243);
 }
 img{
     filter: grayscale(100%);
@@ -58,41 +53,49 @@ img{
     visibility: hidden;
     width: 0px;
 }
+body{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+body>div{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
 main{
-    width: calc(100% - 30px);
-    margin: auto;
+    width: calc(100% - 16px);
+    max-width: 1380px;
+    max-height: 630px;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    overflow-x: auto;
+    gap: 20px;
 }
-header{
-    width: calc(100% - 30px);
-    margin: auto;
-    background-color: rgb(243, 243, 243);
-    text-align: center;
-    padding-top: 19px;
-    padding-bottom: 24px;
-    margin: auto;
-    padding-bottom: 15px;
-    margin-top: 7px;
-    border-radius: 4px;
-    border: 1px solid rgb(208, 208, 208);
-    box-shadow: 0px 1px 2px rgb(209, 209, 209);
-}
-header h1{
-    width: 90%;
-    margin: auto;
-    padding: 0px;
+
+h1{
+    display: inline;
+    padding: 10px 0px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 600;
     font-size: 1.7em;
     line-height: 1.5em;
     font-style: normal;
     text-transform: uppercase;
-    text-align: center;
+    writing-mode: sideways-lr;
+    padding-left: 20px;
 }
+
 /*Classe 1 para imagens*/
 .Imgs{
-    width: 90%;
+    width: 87%;
     flex: 1 0 220px;
-    height: 60vw;
+    height: 210px;
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
@@ -129,7 +132,7 @@ header h1{
         max-height: 23%;
         flex: 1 0 auto;
         object-fit: cover;
-        filter: grayscale(100) brightness(0.93);
+        filter: grayscale(100) brightness(0.93) opacity(0.8);
         transition: filter 0.6s ease;
         border-radius: 6px;
         border: 1px solid rgb(172, 172, 172);
@@ -140,12 +143,13 @@ header h1{
     margin-bottom: 10px;
 }
 .fundo{
-    background-color: rgb(243, 243, 243);
-    border: 1px solid rgb(212, 212, 212);
-    box-shadow: 0px 1px 2px rgb(195, 195, 195);
-    border-radius: 3px;
-    padding-top: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgb(195, 195, 195);
+    padding-top: 10px;
     padding-bottom: 35px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+    min-width: 305px;
 }
 
 h2{
@@ -164,16 +168,19 @@ main h3{
     width: 50%;
 }
 p{
-    max-width: 90%;
-    font-weight: 500;
+    max-width: 87%;
+    font-weight: 400;
     margin: auto;
-    text-align: center;
 }
+
+
 /*Uma linha continua*/
-div#caixa_ulc{
-    padding: 20px 0px;
+#caixa_ulc{
+    height: 570px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    margin-left: 10px;
 }
-    
     h2#ulc{
         text-indent: 5px;
         width: 90%; 
@@ -203,20 +210,9 @@ div#caixa_ulc{
         padding-left: 20px;
         padding-right: 18px;
     }
-    div#caixa_ulc h3{
-        font-family: "Sacramento", cursive;
-        font-weight: lighter;
-        font-size:1.8em;
-        max-height: 50px;
-        padding: 30px 0px;
-        background-color: rgb(247, 247, 247);
-        text-shadow:
-        -0.04px -0.04px 0 black,  
-        0.04px -0.04px 0 black,
-        -0.04px 0.04px 0 black,
-        0.04px 0.04px 0 black;
-        border: 1px solid rgb(215, 215, 215);
-    }
+#catimg{
+    filter: brightness(1.1);
+}
 div#first{
     margin-bottom: 25px;
 }
@@ -224,73 +220,70 @@ div#first{
         margin-top: 20px;
     }
 
-    div#h4_mencao{
+    #head_mencao{
+        display: block;
+    }
+    #head_mencao>div{
         display: flex;
         flex-flow: row nowrap;
-        position: relative;
-        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        width: 87%;
+        height: 45px;
         margin: auto;
+        border-radius: 6px;
+        box-shadow: 0px 0px 4px rgb(143, 143, 143);
     }
-    div#h4_mencao>span{
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        padding: 18px;
-        background-color: rgb(231, 231, 231);
-        border-radius: 7px;
-    }
-    h4#mencao{
-        width: 100%;
-        margin: auto;
+    #head_mencao>div>h4{
+        text-indent: 15px;
         font-family: "Sacramento", cursive;
         font-weight: lighter;
-        font-size:2em;
-        background-color: rgb(231, 231, 231);
-        margin-bottom: 15px;
-        padding: 7px 0px;
-        padding-left: 15px;
-        border-radius: 6px 6px 0px 0px;
-        box-shadow: 0px 2px 4px rgb(111, 111, 111) ;
+        font-size: 1.8em;
         text-shadow:
         -0.01px -0.01px 0 rgb(21, 21, 21),  
         0.01px -0.01px 0 rgb(21, 21, 21),
         -0.01px 0.01px 0 rgb(21, 21, 21),
         0.01px 0.01px 0 rgb(21, 21, 21);
         color: rgb(21, 21, 21);
+        letter-spacing: 0.8px;
+    }
+    #head_mencao>div>span{
+        height: 24px;
+        padding: 10px;
+    }
+    #colapse{
+        display: none;
     }
     div#pert{
         display: none;
     }
-/*formas geometricas*/
-    h3#fg{
-        font-weight: 500;
+/*formas geometricas: usar simbox ou Modernia Geometric Font*/
+    h2#fg{
+        font-weight: 600;
+        letter-spacing: 0.8px;
+        padding-bottom: 10px;
     }
 
 /*Linhas com potas retas*/
     h2#lcpr{
-        font-size: 1.51em;
-        padding: 20px 0px;
-        margin-bottom: 20px;
-    }
-    div#caixalcpr h3{
         font-size: 1.3em;
-        width: 130px;
-        height: 30px;
-        padding: 40px 0px;
-        margin-left: 15px;
+        margin-top: 7px;
+        margin-bottom: 24px;
+        letter-spacing: 1px;
     }
-
 /*Linhas com pontas afiadas*/
     h2#lcpa{
         font-family: "Italiana", sans-serif;
         font-weight: 400;
-        font-size: 1.7em;
+        font-size: 1.45em;
+        letter-spacing: 1px;
         text-shadow:
             -0.2px -0.2px 0 black,  
             0.2px -0.2px 0 black,
             -0.2px 0.2px 0 black,
             0.2px 0.2px 0 black;
-        margin-bottom: 15px;
+        margin-bottom: 24px;
+        margin-top: 5px;
     }
     div#caixa_lcpa h3{
         height: 30px;
@@ -306,75 +299,18 @@ div#first{
             0.15px 0.15px 0 black;
     }
 
-/*Artistas perpicazes*/
-    main>h4#ass{
-        font-size: 16px;
-        font-family: "Babylonica", cursive;
-        font-weight: 400;
-        font-style: normal;
-        text-shadow:
-            -0.1px -0.1px 0 black,  
-            0.1px -0.1px 0 black,
-            -0.1px 0.1px 0 black,
-            0.1px 0.1px 0 black;
-    }
-    
-    div#ultimasimagens{
-        margin-bottom: 60px;
-    }
-
-div#artisp{
-    display: flex;
-    flex-flow:column nowrap;
-    align-items: center;
-    width: 100%;
-    border: 1px dashed black;
-    border-radius: 20px;
-    margin: auto;
-    margin-bottom: 30px;
-    justify-content: space-evenly;
-    background-color: rgb(50, 50, 50);
-}
-    main>div#artisp>h3{
-        width: 100%;
-        background-color: black;
-        color: white;
-        margin: 0px;
-        height: 20px;
-        padding: 22px 0px;
-        border-radius: 20px 20px 0px 0px;
-        box-sizing: border-box;
-    }
-
-div#nick{
-    border-radius: 5px;
-    background-color: rgb(32, 32, 32);
-    color: white;
+/*Totalmente preenchidas: usar a font blackout*/
+#Tt>p{
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-    div#gal>h4{
-        height: 40px;
-        padding: 0px;
-        margin: 0px;
-        font-family: "Babylonica", cursive;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 3em;
-    }
-    div#nick>h4{
-        height: 40px;
-        padding: 0px;
-        margin: 0px;
-    }  
-    
-    div#nick>p{
-        height: 40px;
-        padding: 0px;
-        margin: 0px;
-        text-align: justify;
-    }
+/*Entradas minimas: usar a impact*/
 
-    div#artisp>div#gal>div>img, div#artisp>div#nick>div>img{
-        width: 110px;
-        border-radius: 7px;
-    }
+/*Partes recortadas: usar Sabang Island*/
+#eleimg{
+    filter: brightness(1.1);
+}
+
+/*Luz numa parte spmbras em outras: usar bifur*/
+
